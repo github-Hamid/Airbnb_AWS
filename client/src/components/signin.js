@@ -31,7 +31,7 @@ function Signin() {
     }
     console.log("e: ", email, "pass:", password);
     if (ul.children.length === 0) {
-      fetch("http://localhost:5000/Airbnb/api/signin", {
+      fetch("/Airbnb/api/signin", {
         method: "POST",
         body: JSON.stringify({ email: email, password: password }),
         headers: { "Content-Type": "application/json" },

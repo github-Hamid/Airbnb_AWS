@@ -1,6 +1,10 @@
 import React from 'react'
 import "../css/header.css"
+import { useNavigate } from "react-router-dom";
+
 function Header() {
+let navigate = useNavigate();
+	
 function menuClicked(){
 let close = document.getElementById("closeIcon");
 let menu = document.getElementById("menuIcon");
@@ -35,8 +39,8 @@ menuItems.style.left = "120vw";
     </div>
 <div id='menuItems' className='header_div__div_menu__div_items'>
   <ul>
-    <li><a href="/signup">Sign up</a></li>
-    <li><a href="/signin">Sign in</a></li>
+    <li onClick={(e) =>  navigate(`/register`) } >Signup</li>
+    <li onClick={(e) =>  navigate(`/login`) } >Login</li>
     <li><a href="/">Home</a></li>
   </ul>
 </div>

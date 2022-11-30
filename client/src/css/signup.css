@@ -10,7 +10,7 @@
 .signup-form{
     margin: auto;
     width: 40%;
-    background-image: url(../../public/signup.webp);
+    background-image: url(../public/signup.webp);
     margin-top: 2rem;
     border : 5px solid black;
     box-shadow: 5px 10px black;

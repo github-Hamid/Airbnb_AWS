@@ -54,7 +54,7 @@ function Signup() {
       error.style.display = "block";
       error.style.opacity = 1;
     } else {
-      fetch("http://localhost:5000/Airbnb/api/signup", {
+      fetch("/Airbnb/api/signup", {
         method: "POST",
         body: JSON.stringify({
           fname: fname,
